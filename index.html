@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>扇形2</title>
+  <style>
+  
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ }
+.pie {
+  position: relative;
+  margin: 1em auto;
+  padding: 0;
+  width: 32em;
+  height: 32em;
+  border-radius: 50%;
+  list-style: none;
+  overflow: hidden;
+}
+.slice {
+  overflow: hidden;
+  position: absolute;
+  top: 0; 
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%; 
+}
+.slice-one {
+  transform: rotate(30deg) skewY(-30deg);
+  background: black;
+}
+.slice-two {
+  transform: rotate(-30deg) skewY(-30deg);
+  background: yellow;
+}
+.slice-three {
+  transform: rotate(-90deg) skewY(-30deg);
+  background: black;
+}
+.slice-four {
+  transform: rotate(-150deg) skewY(-30deg);
+  background: yellow;
+}
+.slice-five {
+  transform: rotate(-210deg) skewY(-30deg);
+  background: black;
+}
+.slice-six {
+  transform: rotate(-270deg) skewY(-30deg);
+  background: yellow;
+}
+
+.test {
+  background-image: url("data:image/svg+xml;<svg width='1em' height='1em'  xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g  stroke='none' stroke-width='1' fill='blue' fill-rule='evenodd'><g transform='translate(-15.000000, -504.000000)' fill='#4080E8'><g><g  transform='translate(0.000000, 135.000000)'><g  transform='translate(0.000000, 50.000000)'><g  transform='translate(0.000000, 246.000000)'><g transform='translate(15.000000, 73.000000)'><path d='M8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 Z M11.8819268,4.96398302 L7.12577244,9.9168 L4.09810194,7.07758016 L3.36856473,7.85575318 L7.16640425,11.4162277 L12.6514066,5.70268364 L11.8819268,4.96398302 Z'></path></g></g></g></g></g></g></g></svg>");
+  background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 2em;
+    width: 2em;
+  color: red;
+}
+ 
+  </style>
+</head>
+<body>
+
+
+
+<div style="color: purple;">
+    <svg class="twitter-icon" color='red'>
+      <use xlink:href="./icons.svg#svg1"></use>
+    </svg>
+   
+  
+</div>
+ <span style="display: inline-block; width: 500px; height: 500px"  class="test">
+      sfsf
+    </span>
+
+<style type="text/css">
+	.test2{
+		display: inline-flex;
+		align-items: baseline;
+		background-color: red;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		width: 250px;
+		height: 100px;
+	}
+	.test2 div{
+		background: #ccc;
+		margin-right: 10px;
+		font-size: 50px;
+		line-height: 1;
+	}
+	.test2 span{
+		background: pink;
+		line-height: 1;
+	}
+</style>
+    <div class="test2">
+    	<div>
+    		司
+    	</div>
+    	<span>师傅师傅说</span>
+    </div>
+    <script type="text/javascript">
+    	var el = document.createElement('div')
+    	el.innerHTML = 'TEST'
+    	el.style.position = 'absolute'
+    	el.style.color = 'red'
+    	document.body.appendChild(el)
+    </script>
+</body>
+</html>
